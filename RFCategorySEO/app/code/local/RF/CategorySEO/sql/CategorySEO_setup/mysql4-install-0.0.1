@@ -1,0 +1,65 @@
+<?php
+$installer = $this;
+$installer->startSetup();
+
+
+$catseotitle  = array(
+    'type' => 'text',
+    'label'=> 'Category H1',
+    'input' => 'text',
+    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL, 
+    'visible' => true,
+    'required' => false,
+    'user_defined' => true, 
+    'default' => "",
+    'sort_order' => 1,
+    'group' => "Category SEO"
+);
+
+$catseotitleh3  = array(
+    'type' => 'text',
+    'label'=> 'Category H3',
+    'input' => 'text',
+    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL, 
+    'visible' => true,
+    'required' => false,
+    'user_defined' => true, 
+    'default' => "",
+    'sort_order' => 1,
+    'group' => "Category SEO"
+);
+
+
+$catseocolleft  = array(
+    'type' => 'text',
+    'label'=> 'Category Column Left',
+    'input' => 'textarea',
+    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL, 
+    'visible' => true,
+    'required' => false,
+    'user_defined' => true, 
+    'default' => "",
+    'sort_order' => 2,
+    'group' => "Category SEO"
+);
+
+$catseocolright  = array(
+    'type' => 'text',
+    'label'=> 'Category Column Right',
+    'input' => 'textarea',
+    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL, 
+    'visible' => true,
+    'required' => false,
+    'user_defined' => true, 
+    'default' => "",
+    'sort_order' => 3,
+    'group' => "Category SEO"
+); 
+
+$installer->addAttribute('catalog_category', 'catseotitle', $catseotitle);
+$installer->addAttribute('catalog_category', 'catseotitleh3', $catseotitleh3);
+$installer->addAttribute('catalog_category', 'catseocolleft', $catseocolleft);
+$installer->addAttribute('catalog_category', 'catseocolright', $catseocolright);
+
+$installer->endSetup();
+?>
