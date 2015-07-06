@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <RF_CategorySEO>
+      <version>0.0.2</version>
+    </RF_CategorySEO>
+  </modules>
+    <global>
+      <resources>
+          <CategorySEO_setup>
+            <setup>
+              <module>RF_CategorySEO</module>
+              <class>Mage_Eav_Model_Entity_Setup</class>
+            </setup>
+            <connection>
+              <use>default_setup</use>
+            </connection>
+          </CategorySEO_setup>
+      </resources>
+    </global>
+</config>
