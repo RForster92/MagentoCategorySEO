@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <RF_CategorySEO>
+      <active>true</active>
+      <codePool>local</codePool>
+    </RF_CategorySEO>
+  </modules>
+</config>
